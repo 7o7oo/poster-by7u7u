@@ -8,7 +8,7 @@ function App() {
     const [posts ,setPosts] = React.useState([])
 
     React.useEffect(()=>{
-        axios.get('http://localhost:5000/posts')
+        axios.get('https://poster-cdd.herokuapp.com/posts')
         .then(result => {
             const postsArray = result.data
             console.log(postsArray)

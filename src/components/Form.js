@@ -18,7 +18,7 @@ function Form() {
             title : title
             ,content : content
         }
-        axios.post("http://localhost:5000/posts" ,post)
+        axios.post("https://poster-cdd.herokuapp.com/posts" ,post)
         .then(console.log("performed"))
         .catch(err => console.log(err))
     }
